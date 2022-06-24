@@ -1,7 +1,5 @@
-"""
-Functional Prompt
-Implement a function that will flatten and sort an array of integers in ascending order, and which adheres to a functional programming paradigm.
-"""
+# Functional Prompt
+
 def my_list_sorter(the_list):
   new_list = list()
   for item in the_list:
@@ -14,24 +12,16 @@ def my_list_sorter(the_list):
 print(my_list_sorter([4, [3, [12, 14], 5, 7, [50, 20]], 2, 1]))
 
 """
-How does this solution ensure data immutability?
-Is this solution a pure function? Why or why not?
-Is this solution a higher order function? Why or why not?
-Would it have been easier to solve this problem using a different programming style?
-Why in particular is functional programming a helpful paradigm when solving this problem?
+How does this solution ensure data immutability? It returns a new list instead of changing the original
+Is this solution a pure function? Why or why not? Yes, it only depends on the input and nothing outside of itself
+Is this solution a higher order function? Why or why not? No, it does not accept or return a higher order function. But it is recursive :)
+Would it have been easier to solve this problem using a different programming style? Not on something as foundational as a list. It wouldn't make sense to make an object class for this.
+Why in particular is functional programming a helpful paradigm when solving this problem? This function only has one job to focus on
 """
 
 
 
-"""
-Object Oriented Prompt
-Watto needs a new system for organizing his inventory of podracers. Help him do this by implementing an Object Oriented solution according to the following criteria.
-
-First, he'll need a general Podracer class defined with max_speed, condition (perfect, trashed, repaired) and price attributes.
-Define a repair() method that will update the condition of the podracer to "repaired".
-Define a new class, AnakinsPod that inherits the Podracer class, but also contains a special method called boost that will multiply max_speed by 2.
-Define another class that inherits Podracer and call this one SebulbasPod. This class should have a special method called flame_jet that will update the condition of another podracer to "trashed".
-"""
+# Object Oriented Prompt
 
 class Podracer:
   def __init__(self, max_speed, condition, price):
@@ -55,9 +45,9 @@ class SebulbasPod(Podracer):
   def flame_jet(self, other_pod):
     other_pod.set_condition('trashed')
 
-my_first_pod = Podracer(4, 'trashed', 20000)
-my_first_pod.repair()
-print(my_first_pod.condition)
+pod = Podracer(4, 'trashed', 20000)
+pod.repair()
+print(pod.condition)
 
 new_pod = AnakinsPod(2, 'perfect', 10000)
 new_pod.boost()
@@ -80,9 +70,10 @@ How in particular did Object Oriented Programming assist in the solving of this 
 
 
 
-"""
-Reflection
 
+# Reflection
+
+"""
 Is one of these coding paradigms "better" than the other? Why or why not?
 Given the opportunity to work predominantly using either of these coding paradigms, which seems more appealing? Why?
 Now being more familiar with these coding paradigms, what tasks/features/pieces of logic would be best handled using functional programming? Object Oriented Programming?
