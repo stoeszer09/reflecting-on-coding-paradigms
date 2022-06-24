@@ -4,7 +4,14 @@ Implement a function that will flatten and sort an array of integers in ascendin
 """
 def my_list_sorter(the_list):
   new_list = list()
-  return new_list
+  for item in the_list:
+    if type(item) == list:
+      new_list = new_list + my_list_sorter(item)
+    else:
+      new_list.append(item)
+  return sorted(new_list)
+
+print(my_list_sorter([4, [3, [12, 14], 5, 7, [50, 20]], 2, 1]))
 
 """
 How does this solution ensure data immutability?
