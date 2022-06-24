@@ -60,12 +60,12 @@ print(third_pod.condition)
 
 """
 How does this solution demonstrate the four pillars of OOP? (It may not demonstrate all of them, describe only those that apply)
-Encapsulation
+Encapsulation - Maybe I'm thinking about this wrong, but that's what an object is. Information about one thing, bundled up into one object. So doing OOP without encapsulation doesn't seem possible.
 Abstraction
-Inheritance
+Inheritance - The repair method was inherited to the other classes as well as setting the self attributes.
 Polymorphism
-Would it have been easier to implement a solution to this problem using a different coding style? Why or why not?
-How in particular did Object Oriented Programming assist in the solving of this problem?
+Would it have been easier to implement a solution to this problem using a different coding style? Why or why not? No, even at this small amount, I think OOP was easiest
+How in particular did Object Oriented Programming assist in the solving of this problem? OOP seems particularly useful when representing something in the real world.
 """
 
 
@@ -74,9 +74,9 @@ How in particular did Object Oriented Programming assist in the solving of this 
 # Reflection
 
 """
-Is one of these coding paradigms "better" than the other? Why or why not?
-Given the opportunity to work predominantly using either of these coding paradigms, which seems more appealing? Why?
-Now being more familiar with these coding paradigms, what tasks/features/pieces of logic would be best handled using functional programming? Object Oriented Programming?
-Personally, which of these styles takes more work to understand? What should be done in order to deepen understanding related to this paradigm?
+Is one of these coding paradigms "better" than the other? Why or why not? No, it really depends on what the end goal is.
+Given the opportunity to work predominantly using either of these coding paradigms, which seems more appealing? Why? I currently feel more comfortable with OOP because it feels more tangible.
+Now being more familiar with these coding paradigms, what tasks/features/pieces of logic would be best handled using functional programming? Object Oriented Programming? Functional Programming seems to be better for handling abstract ideas and OOP is better at representing real world examples
+Personally, which of these styles takes more work to understand? What should be done in order to deepen understanding related to this paradigm? At the moment I find the Functional Programming more difficult because I have questions with the prompts that are not answered. CodeWars and LeetCode seem to be more ideal for Functional Programming.
 
 """
